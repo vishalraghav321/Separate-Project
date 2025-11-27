@@ -1,114 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="theme.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Contact Us – CarVerse</title>
+</head>
+<body>
 
-    <title>Simple Contact Form</title>
-  </head>
-  <body>
-    <style>
-      body {
-        background-color: #121212;
-        color: #e0e0e0;
-        background-image: radial-gradient(#1f1f1f 1px, transparent 1px);
-        background-size: 20px 20px; /* tiny carbon fiber dots */
-      }
-    </style>
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-      <div class="nav-inner">
-        <a class="brand" href="upcoming.html">CarVerse</a>
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="hot.html">Hot Deals</a></li>
-          <li><a href="upcoming.html">Upcoming Cars</a></li>
-          <li><a href="reviews.html">Reviews</a></li>
-          <li><a href="contact.html" class="active">Contact Us</a></li>
-        </ul>
-      </div>
-    </nav>
-    <style>
-      .body {
-        background-color: #121212;
-        color: #e0e0e0;
-        background-image: radial-gradient(#1f1f1f 1px, transparent 1px);
-        background-size: 20px 20px;
-      }
-      .form {
-        border: 2px solid black;
-        background-color: rgb(54, 79, 109);
-        width: 350px;
-        margin-left: 580px;
-      }
-    </style>
-
-    <h2 align=" center">Enquiry Form</h2>
-    <div align="center" class="form">
-      <form>
-        <table border="2px" cellpadding="10" cellspacing="0">
-          <tr>
-            <th colspan="2">Contact Us</th>
-          </tr>
-          <tr>
-            <td>Full Name:</td>
-            <td>
-              <input
-                type="text"
-                name="fullname"
-                placeholder="Enter your name"
-                required
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>Email:</td>
-            <td>
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>Phone:</td>
-            <td>
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Enter your phone number"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>Subject:</td>
-            <td>
-              <input type="text" name="subject" placeholder="Enter subject" />
-            </td>
-          </tr>
-          <tr>
-            <td>Message:</td>
-            <td>
-              <textarea
-                name="message"
-                rows="5"
-                cols="30"
-                placeholder="Write your message here..."
-              ></textarea>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2" align="center">
-              <input type="submit" value="Send" />
-              <input type="reset" value="Clear" />
-            </td>
-          </tr>
-        </table>
-      </form>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">CarVerse</a>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="hot.html">Hot Deals</a></li>
+        <li><a href="upcoming.html">Upcoming Cars</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
     </div>
-  </body>
+  </nav>
+
+  <main class="form-wrap">
+    <section class="form-card" aria-labelledby="contact-title">
+      <h2 id="contact-title">Enquiry Form</h2>
+      <form>
+        <div class="form-grid">
+          <div>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+          </div>
+          <div>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Enter subject">
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+          </div>
+        </div>
+        <div class="form-actions">
+          <input type="submit" value="Send">
+          <input type="reset" value="Clear">
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer" role="contentinfo">
+    <p>© 2025 CarVerse</p>
+  </footer>
+</body>
 </html>
