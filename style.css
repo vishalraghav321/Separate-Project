@@ -402,3 +402,22 @@ input[type="reset"] {
     height: 240px;
   }
 }
+/* ===== Upcoming Cars Badge ===== */
+.card.upcoming {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  color: #1b1206;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 6px 10px;
+  border-radius: 999px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+
