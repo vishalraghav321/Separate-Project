@@ -421,3 +421,90 @@ input[type="reset"] {
   z-index: 2;
 }
 
+/* =====================================
+   MINOR GLOBAL STYLE IMPROVEMENTS
+   (Safe for ALL pages)
+   ===================================== */
+
+/* NAVBAR ACTIVE + HOVER POLISH */
+.nav-list a {
+  position: relative;
+}
+
+.nav-list a::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 6px;
+  height: 2px;
+  background: var(--accent-2);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.nav-list a:hover::after {
+  opacity: 1;
+}
+
+/* CARD IMAGE HOVER ZOOM */
+.card img,
+.detail .media {
+  transition: transform 0.4s ease;
+}
+
+.card:hover img,
+.detail .card:hover .media {
+  transform: scale(1.05);
+}
+
+/* BUTTON HOVER FEEDBACK */
+.btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* PRIMARY BUTTON STRONGER */
+.btn.primary:hover {
+  box-shadow: 0 10px 24px rgba(188, 108, 37, 0.45);
+}
+
+/* SECTION HEADINGS SPACING */
+.section h1,
+.section h3 {
+  letter-spacing: 0.3px;
+}
+
+/* FORM INPUT FOCUS */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(188, 108, 37, 0.25);
+}
+
+/* UPCOMING BADGE MICRO ANIMATION */
+.badge {
+  transition: transform 0.25s ease;
+}
+
+.card.upcoming:hover .badge {
+  transform: scale(1.08);
+}
+
+/* FOOTER SOFT HOVER (IF LINKS ADDED LATER) */
+.site-footer a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.site-footer a:hover {
+  color: var(--text);
+}
